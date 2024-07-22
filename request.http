@@ -1,0 +1,29 @@
+### GET ALL
+GET http://localhost:8080/api/posts
+Accept: application/json
+
+### GET BY ID
+GET http://localhost:8080/api/posts/1
+Accept: application/json
+
+### CREATE
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+    "title": "Post 1",
+    "content": "Content 1"
+}
+
+### UPDATE BY ID
+PATCH http://localhost:8080/api/posts/1
+Content-Type: application/json
+
+{
+    "title": "Post 1 Updated",
+    "content": "Content 1 Updated"
+}
+
+### DELETE BY ID
+DELETE http://localhost:8080/api/posts/1
+Accept: application/json
